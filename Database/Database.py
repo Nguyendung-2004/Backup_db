@@ -17,12 +17,12 @@ CREATE TABLE IF NOT EXISTS users (
 cursor.executemany('''
 INSERT INTO users (name, email) VALUES (?, ?)
 ''', [
-    ("Nguyễn Văn A", "a@example.com"),
-    ("Trần Thị B", "b@example.com"),
-    ("Lê Văn C", "c@example.com")
+    ('Nguyễn Ngọc Dũng', 'dung@gmail.com'),
+    ('Nguyễn Thành Tín', 'tin@gmail.com'),
+    ('Đồng Thanh Huyền', 'huyen@gmail.com')
 ])
 
 conn.commit()
 conn.close()
 
-print("✅ Đã tạo file Database.sqlite3 thành công.")
+print("Đã tạo file Database.sqlite3 thành công.")
